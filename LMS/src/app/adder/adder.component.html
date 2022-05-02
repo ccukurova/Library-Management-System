@@ -1,0 +1,31 @@
+<h4 style>Add Book</h4>
+<table class="table" style="background-color: rgb(226, 226, 226)">
+  <thead>
+    <tr>
+      <th scope="col">Book Name</th>
+      <th scope="col">Author</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Shelf</th>
+      <th scope="col">Number</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input #nameInput type="text" /></td>
+      <td><input #authorInput type="text" /></td>
+      <td><input #publisherInput type="text" /></td>
+      <td><input #shelfInput type="text" /></td>
+      <td><input #numberInput type="text" /></td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-success"
+          (click)="this.newMessage(nameInput.value,authorInput.value,publisherInput.value,shelfInput.value,numberInput.value);"
+        >
+          Add
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

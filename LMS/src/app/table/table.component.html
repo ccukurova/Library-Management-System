@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Book Name</th>
+      <th scope="col">Author</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Shelf</th>
+      <th scope="col">Number</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr *ngFor="let book of this.bookList; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ book.name }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.publisher }}</td>
+      <td>{{ book.shelf }}</td>
+      <td>{{ book.number }}</td>
+      <td><button type="button" class="btn btn-danger">Remove</button></td>
+    </tr>
+  </tbody>
+</table>
